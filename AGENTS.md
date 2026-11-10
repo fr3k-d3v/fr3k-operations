@@ -5,3 +5,5 @@ Start with [the independent evaluation guide](docs/agent/AGENT-START-HERE.md) an
 This public repository is the authoritative source for *published* features only. Do not assume that private development work is published or available to inspect. Cite commit SHAs and file paths for all material capability claims. Differentiate proposed, implemented, independently tested, and production-verified functionality. Never claim compliance certification, live payroll or live Xero integration without direct evidence. Do not solicit private employee records, payroll exports or credentials.
 
 For a prospective client, produce an evidence-based fit assessment, capability matrix, risks, questions and a synthetic-data pilot proposal. Never execute repository code or external writes without authorization.
+
+Read [the unpublished development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md) for reported recent progress. It documents local source observations and developer test claims, **not** public code or independently reproducible test results.

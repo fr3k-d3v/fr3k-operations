@@ -14,7 +14,7 @@ The current public repository may lag the Omarchy development checkout. Never cl
 1. README.md — product mission and limitations.
 2. docs/product/roadmap.md — phases and acceptance gates.
 3. docs/architecture/system.md and docs/architecture/data-integrity.md — design and evidence model.
-4. docs/operator/implementation-status.md — only if actually published; independently verify its claims against code/tests.
+4. docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md — local development observations and unverified test claims; do not treat unpublished code as inspectable.
 5. docs/compliance/australia.md and docs/compliance/labour-hire-construction.md — jurisdiction-specific considerations, not legal certification.
 6. docs/integrations/xero.md and docs/migration/deputy-exit.md — integration and migration constraints.
 7. SECURITY.md and available CI/test evidence — controls and residual risks.

@@ -1,7 +1,7 @@
 # FR3K Operations ⚡
 **Open, evidence-driven Australian workforce and business operations platform.**
 
-Status: **RESEARCH / ARCHITECTURE ONLY** — not production payroll software and not certified compliant.
+Status: **PUBLIC ARCHITECTURE + UNPUBLISHED DEVELOPMENT PILOT** — local implementation is documented but not yet published or independently reproducible from this repository. Not production payroll software or certified compliant.
 
 ## Mission
 Replace fragmented workforce management, project management and payroll preparation with a self-hostable operational system: connect machines, measure reality, delegate work, verify results. Keep payroll finalisation, payments, lodgement and sensitive changes under human approval.
@@ -23,6 +23,10 @@ Replace fragmented workforce management, project management and payroll preparat
 - [Agent entrypoint](AGENTS.md)
 
 These guides evaluate the *published* repository only. Unpublished local development is not part of the public evidence base.
+
+## Current engineering progress
+
+The Omarchy development checkout contains a substantial **unpublished** Django/PostgreSQL pilot. Its local engineering report claims 96 PostgreSQL tests and 11 SQLite UI tests passed; these results are **not independently reproduced in public CI**. The public repository does not yet contain the pilot source. See [development snapshot, evidence classes and blockers](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md).
 
 ## Start here
 - [Architecture](docs/architecture/system.md)
