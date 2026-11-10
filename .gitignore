@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+*.sqlite
+*.db
+backups/
+exports/
+private/
+secrets/
+*.pem
+*.key
+node_modules/
+__pycache__/

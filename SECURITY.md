@@ -1,0 +1,2 @@
+# Security and privacy
+Never open issues with employee names, applicant CVs, tax identifiers, banking details, payroll exports, tokens, private IPs or contracts. Use synthetic examples. Report vulnerabilities privately to maintainers. Encrypt data at rest/in transit, restrict roles and log privileged access. Keep retention and privacy impact assessments per deployment. No production credentials in CI.
