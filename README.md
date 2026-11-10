@@ -32,3 +32,6 @@ This repository contains no employee records, recruitment applications, payroll 
 
 ## Licence
 Apache-2.0; third-party code must be assessed for licence compatibility before incorporation.
+
+## Industrial construction / labour hire vertical
+Initial target vertical: Australian labour hire, industrial construction and mobile crews. See [sector-specific compliance and data model](docs/compliance/labour-hire-construction.md). Do not assume one award or that all host-site conditions automatically apply.
