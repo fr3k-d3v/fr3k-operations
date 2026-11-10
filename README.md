@@ -14,6 +14,16 @@ Replace fragmented workforce management, project management and payroll preparat
 - Compliance: effective-dated rules, provenance, exceptions, approvals, reproducible calculations.
 - Integrity: immutable audit events, snapshots, backups, restores and independent reconciliation.
 
+## For clients and AI agents
+
+**Give your AI assistant this repository URL:** https://github.com/fr3k-d3v/fr3k-operations
+
+- [Client-ready AI evaluation prompt](docs/agent/CLIENT-SHARE.md)
+- [Independent AI agent evaluation protocol](docs/agent/AGENT-START-HERE.md)
+- [Agent entrypoint](AGENTS.md)
+
+These guides evaluate the *published* repository only. Unpublished local development is not part of the public evidence base.
+
 ## Start here
 - [Architecture](docs/architecture/system.md)
 - [Australian compliance register](docs/compliance/australia.md)
