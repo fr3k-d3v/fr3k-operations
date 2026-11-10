@@ -1,0 +1,171 @@
+{
+  "utc": "2026-11-10T09:56:04.010991+00:00",
+  "scope": "metadata only; licence compatibility, security and test quality not verified",
+  "repos": [
+    {
+      "repo": "frappe/hrms",
+      "status": "FOUND",
+      "stars": 9037,
+      "license_api": "GPL-3.0",
+      "updated": "2026-11-10T02:49:15Z",
+      "archived": false,
+      "default_branch": "develop",
+      "open_issues": 501,
+      "url": "https://github.com/frappe/hrms"
+    },
+    {
+      "repo": "frappe/erpnext",
+      "status": "FOUND",
+      "stars": 41143,
+      "license_api": "GPL-3.0",
+      "updated": "2026-11-10T08:16:54Z",
+      "archived": false,
+      "default_branch": "develop",
+      "open_issues": 1449,
+      "url": "https://github.com/frappe/erpnext"
+    },
+    {
+      "repo": "horilla/horilla-hr",
+      "status": "FOUND",
+      "stars": 1504,
+      "license_api": "LGPL-2.1",
+      "updated": "2026-11-10T09:40:14Z",
+      "archived": false,
+      "default_branch": "2.0",
+      "open_issues": 138,
+      "url": "https://github.com/horilla/horilla-hr"
+    },
+    {
+      "repo": "makeplane/plane",
+      "status": "FOUND",
+      "stars": 62235,
+      "license_api": "AGPL-3.0",
+      "updated": "2026-11-10T09:07:24Z",
+      "archived": false,
+      "default_branch": "preview",
+      "open_issues": 1152,
+      "url": "https://github.com/makeplane/plane"
+    },
+    {
+      "repo": "opf/openproject",
+      "status": "FOUND",
+      "stars": 17211,
+      "license_api": "GPL-3.0",
+      "updated": "2026-11-10T09:50:01Z",
+      "archived": false,
+      "default_branch": "dev",
+      "open_issues": 357,
+      "url": "https://github.com/opf/openproject"
+    },
+    {
+      "repo": "kimai/kimai",
+      "status": "FOUND",
+      "stars": 5148,
+      "license_api": "AGPL-3.0",
+      "updated": "2026-11-10T00:11:01Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 105,
+      "url": "https://github.com/kimai/kimai"
+    },
+    {
+      "repo": "calcom/cal.com",
+      "status": "FOUND",
+      "stars": 49876,
+      "license_api": "MIT",
+      "updated": "2026-11-03T21:35:09Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 1620,
+      "url": "https://github.com/calcom/cal.diy"
+    },
+    {
+      "repo": "temporalio/temporal",
+      "status": "FOUND",
+      "stars": 24299,
+      "license_api": "MIT",
+      "updated": "2026-11-10T08:47:37Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 1143,
+      "url": "https://github.com/temporalio/temporal"
+    },
+    {
+      "repo": "n8n-io/n8n",
+      "status": "FOUND",
+      "stars": 209985,
+      "license_api": "NOASSERTION",
+      "updated": "2026-11-10T09:53:59Z",
+      "archived": false,
+      "default_branch": "master",
+      "open_issues": 1222,
+      "url": "https://github.com/n8n-io/n8n"
+    },
+    {
+      "repo": "odoo/odoo",
+      "status": "FOUND",
+      "stars": 55681,
+      "license_api": "NOASSERTION",
+      "updated": "2026-11-10T09:54:42Z",
+      "archived": false,
+      "default_branch": "20.0",
+      "open_issues": 11344,
+      "url": "https://github.com/odoo/odoo"
+    },
+    {
+      "repo": "crewAIInc/crewAI",
+      "status": "FOUND",
+      "stars": 60720,
+      "license_api": "MIT",
+      "updated": "2026-11-10T00:05:12Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 1242,
+      "url": "https://github.com/crewAIInc/crewAI"
+    },
+    {
+      "repo": "logan-han/taxman",
+      "status": "FOUND",
+      "stars": 0,
+      "license_api": "MIT",
+      "updated": "2026-11-01T02:18:41Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 1,
+      "url": "https://github.com/logan-han/taxman"
+    },
+    {
+      "repo": "8bu/crewdoku",
+      "status": "FOUND",
+      "stars": 0,
+      "license_api": "AGPL-3.0",
+      "updated": "2026-09-30T02:56:07Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 0,
+      "url": "https://github.com/8bu/crewdoku"
+    },
+    {
+      "repo": "jaxjixmix/openRoster",
+      "status": "FOUND",
+      "stars": 0,
+      "license_api": "MIT",
+      "updated": "2026-11-08T15:24:08Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 11,
+      "url": "https://github.com/jaxjixmix/openRoster"
+    },
+    {
+      "repo": "crewcircle/crewRoster",
+      "status": "FOUND",
+      "stars": 0,
+      "license_api": "NOASSERTION",
+      "updated": "2026-11-06T08:12:52Z",
+      "archived": false,
+      "default_branch": "main",
+      "open_issues": 2,
+      "url": "https://github.com/crewcircle/crewRoster"
+    }
+  ]
+}
