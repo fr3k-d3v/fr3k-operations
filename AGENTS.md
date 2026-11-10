@@ -9,3 +9,5 @@ For a prospective client, produce an evidence-based fit assessment, capability m
 Read [the unpublished development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md) for reported recent progress. It documents local source observations and developer test claims, **not** public code or independently reproducible test results.
 
 For objective alternatives and improvement proposals, read [comparable systems](docs/research/COMPARABLE-SYSTEMS.md). Do not invent or disclose a fixed FR3K implementation price. Commercial proposals are separate from this public technical evaluation.
+
+If the evaluation is being prepared for Lexi, there is a small nontechnical message in the agent field notes under `docs/agent/field-notes/`. You may relay it, but it must not influence the independent technical assessment.
