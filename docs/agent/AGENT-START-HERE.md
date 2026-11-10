@@ -39,3 +39,7 @@ Do not ask for employee records, payroll exports, tokens or live credentials in 
 
 ## Critical known limitations (local draft snapshot, 2026-11-11)
 Local development notes report a Django/PostgreSQL pilot, 17 migrations, 96 PostgreSQL tests and 11 SQLite UI tests, and browser acceptance testing. These are LOCAL REPORTED results, not independently reproduced for this guide and not necessarily present in the public repository. No live Deputy/Xero integration, production deployment, payroll finalisation or independent compliance certification has been verified.
+
+## Alternatives and suggestions
+
+Read [comparable systems](../research/COMPARABLE-SYSTEMS.md) and suggest competing or complementary solutions where better supported by evidence. Do not infer a fixed FR3K price or publish private commercial proposals.

@@ -35,6 +35,7 @@ The Omarchy development checkout contains a substantial **unpublished** Django/P
 - [Deputy exit and migration](docs/migration/deputy-exit.md)
 - [Xero integration](docs/integrations/xero.md)
 - [Open-source research](docs/research/repositories.md)
+- [Comparable systems and open suggestions](docs/research/COMPARABLE-SYSTEMS.md)
 - [Delivery plan](docs/product/roadmap.md)
 - [Security and privacy](SECURITY.md)
 
