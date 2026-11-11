@@ -1,7 +1,7 @@
 # FR3K Operations ⚡
 **Open, evidence-driven Australian workforce and business operations platform.**
 
-Status: **PUBLIC ARCHITECTURE + UNPUBLISHED DEVELOPMENT PILOT** — local implementation is documented but not yet published or independently reproducible from this repository. Not production payroll software or certified compliant.
+Status: **PUBLIC DOCUMENTATION + PRIVATE APPLICATION DEVELOPMENT** — application code is maintained in a separate private repository at the owner's direction. This public repository carries requirements, progress and verification summaries. Production acceptance remains incomplete.
 
 ## Mission
 Replace fragmented workforce management, project management and payroll preparation with a self-hostable operational system: connect machines, measure reality, delegate work, verify results. Keep payroll finalisation, payments, lodgement and sensitive changes under human approval.
@@ -22,7 +22,7 @@ Replace fragmented workforce management, project management and payroll preparat
 - [Independent AI agent evaluation protocol](docs/agent/AGENT-START-HERE.md)
 - [Agent entrypoint](AGENTS.md)
 
-These guides evaluate the *published* repository only. Unpublished local development is not part of the public evidence base.
+These guides evaluate the *published* repository only. Private implementation cannot be independently inspected from this public checkout; published verification summaries must be distinguished from independently reproduced evidence.
 
 ## CREW CENTRAL business blueprint
 
@@ -30,7 +30,7 @@ The business-owner visual plan has been translated into a sanitised requirements
 
 ## Current engineering progress
 
-The Omarchy development checkout contains a substantial **unpublished** Django/PostgreSQL pilot. Its local engineering report claims 96 PostgreSQL tests and 11 SQLite UI tests passed; these results are **not independently reproduced in public CI**. The public repository does not yet contain the pilot source. See [development snapshot, evidence classes and blockers](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md).
+The Django/PostgreSQL application has been preserved and pushed to the new private `fr3k-d3v/fr3k-operations-app` repository. The baseline was rerun against PostgreSQL with browser checks; private CI is configured. See [current implementation progress, verification and release gates](docs/progress/CREW-CENTRAL-IMPLEMENTATION.md). The [older development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md) is retained as dated history; use the current progress page for updated counts and source references.
 
 ## Start here
 - [Architecture](docs/architecture/system.md)
