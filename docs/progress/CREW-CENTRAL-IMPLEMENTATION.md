@@ -4,104 +4,76 @@ Updated: 2026-11-11.
 
 ## Source and publication boundary
 
-The owner has requested that this public repository carry documentation and
-verification summaries, with application code in a separate private repository.
-The private application repository is created and its visibility verified:
-`fr3k-d3v/fr3k-operations-app`. The baseline source commit is `2cd3052`; the project-costing increment is
-`32fddfc`.
-Application source has not been published here. Earlier public snapshots remain dated developer observations.
+At the owner's direction, this public repository carries requirements,
+documentation and verification summaries. Application code is in the separately
+created private `fr3k-d3v/fr3k-operations-app` repository; PRIVATE visibility was
+checked before every push. No application source or business records were
+published here.
 
-The local starting application is based on research commit
-`f8b0739`, with unpublished Django source and migrations through 0021.
-The public documentation baseline is `826db1f45407b3cc3b532166103db136a4f53413`.
-Before editing, the local tracked changes and untracked source were preserved in
-a checksummed archive. Existing changes are being retained.
+The original local tracked changes and untracked application were preserved in
+a checksummed archive before editing. The private source begins with a fresh
+history from research commit `f8b0739` plus existing unpublished Django work
+through migration 0021. Public documentation baseline:
+`826db1f45407b3cc3b532166103db136a4f53413`. The original checkout remains intact.
 
-## Delivery sequence
+## Delivered private increments
 
-1. Reproducible private application baseline: clean startup, migrations,
-   synthetic fixtures, automated PostgreSQL and browser verification.
-2. Shared identity, permissions, approvals, evidence, notifications and recovery.
-3. Recruitment, employment, scheduling, time, leave and payroll preparation.
-4. Clients, projects/jobs, tasks, budgets, costing, registers and finance.
-5. Independently validated rules, source migration and reconciled Xero handoff.
-6. Optional grounded AI, independent reviews, pilot and controlled production.
+| Commit | Implemented and developer-verified |
+|---|---|
+| `2cd3052` | Reproducible baseline, automatic development migration/seed ordering, disabled-login synthetic fixtures and one-command verification |
+| `32fddfc` | Clients/milestones, reviewed budgets, exact dated-rate work allocation across jobs, expenses/commitments and immutable source-preserving cost forecasts |
+| `cdb5f6e` | Separate vacancy/application histories, interviews/evaluations/offers, replay-safe employment draft preparation, reviewed onboarding and separation records |
+| `4fc98cf` | Reviewed availability/qualifications, configured engagement/shift eligibility, server-time mobile capture, reviewed attendance preparation and immutable period close |
+| `cf6e2ca` | Encrypted controlled documents, independently approved internal publication, company/licence/insurance/obligation registers and accountable renewal queue |
+
+Cost reports cover operational base hourly labour and expenses; payroll
+on-costs, tax and accounting reconciliation are excluded. Recruitment preparation
+creates drafts for separate human review. Legacy shifts without configured
+eligibility requirements remain supported and are not proof of full eligibility.
+Period close freezes approved time, with separately reviewed closed-period
+adjustments still to be designed. Register escalation is an in-app owner queue,
+not verified external notification delivery.
+
+Document uploads use bounded memory and independent versioned encryption keys.
+Workers receive current approved internal documents only; changing the approved
+audience removes prior internal publication. Retention classes are metadata;
+retention schedules, key rotation, malware scanning and off-host custody remain
+acceptance work.
 
 ## Current verification
 
-The private baseline at `2cd3052` was verified locally on 2026-11-11:
+At private commit `cf6e2ca`, local PostgreSQL 18.6 verification passed:
 
-- PostgreSQL 18.6: 118 Django tests passed, with no skips.
-- Three standalone export-inspector tests passed.
-- Migration drift check and OpenAPI validation passed.
-- Chromium: worker leave submission, separate reviewer approval, mobile layout,
-  and HR retry/replacement of approved synthetic export jobs passed with no page
-  errors.
-- SQLite smoke: 118 tests passed with five PostgreSQL-specific tests skipped.
+- 164 Django tests, no skips, plus three standalone export-inspector tests.
+- Migration drift check and warning-free validated OpenAPI.
+- Four Chromium journeys with no page errors: leave/review and delivery recovery;
+  roster → timesheet → split-job cost forecast; accepted offer → reviewed
+  onboarding → hired application → approved work → payroll-preparation export;
+  encrypted document upload → independent publication → worker download.
+- Desktop/mobile checks, including mobile time capture and document library.
+- Runtime dependency scan: no known vulnerabilities.
+- Bandit: 6,679 lines scanned, no skipped files or medium/high findings; 38 low
+  notices remain for review. The baseline CI scan initially scanned no files
+  because of an incorrect path argument; it was corrected and is not relied on.
 
-At private commit `32fddfc`, project costing adds clients, milestones, reviewed
-project budgets, dated-rate work allocations across jobs, approved expenses and
-commitments, and immutable cost/forecast snapshots preserving all selected source
-versions. Allocations reconcile every date/rate to the approved timesheet.
-Duplicate approved allocations and stale corrected sources are blocked.
-The job-cost report remains operational base labour costing; payroll on-costs,
-tax, full source completeness and accounting reconciliation are not claimed.
+Private hosted CI includes both full application/browser/security checks and a
+fresh Docker Compose build/startup with migrations, idempotent seed and reachable
+login. Runs `43016402929` (projects) and `43017095832` (recruitment) passed.
+Later increments are being checked in their corresponding hosted runs.
 
-The expanded local verification passed 131 PostgreSQL tests (no skips), three
-standalone tests, migration drift and OpenAPI validation, and two Chromium
-journeys including roster → timesheet → split allocation → saved cost report.
-Desktop/mobile checks passed with no page errors. Runtime dependency scanning
-reported no known vulnerabilities. The corrected Bandit scan covered 5,607 lines
-with no skipped files and no medium/high findings; 38 low notices remain for
-review. The earlier baseline CI scan invocation scanned no files; it has been
-corrected and is not relied on as static-analysis evidence.
+These are developer-run synthetic checks, not independent acceptance, payroll
+certification, production deployment or live Xero evidence.
 
-Private baseline hosted CI run `43015213006` passed application/browser checks.
-Hosted CI run `43016402929` passed both the expanded application job and the
-clean Docker Compose startup job for private commit `32fddfc`.
+## Milestones and remaining gates
 
-The recruitment increment at private commit `cdb5f6e` adds separate vacancy and
-application histories, interviews, evaluations, offers, onboarding and separation
-records. An approved accepted offer prepares linked employment drafts once;
-separate reviewers must approve the engagement, contract and rate and completed
-onboarding before a hired application can be approved. Candidate identity and
-earlier application versions are retained. Changed offers block silent rewrites.
-This does not automate employment decisions, account provisioning, final pay or
-notifications.
+[Six delivery milestones](DELIVERY-MILESTONES.md) consolidate the original
+overlapping issues. Their unresolved acceptance criteria remain open; draft
+PR #7 remains research rather than implementation acceptance.
 
-Local verification passed 142 PostgreSQL tests (no skips), three standalone
-tests, migration drift and OpenAPI checks, runtime dependency scanning and the
-corrected static scan (5,863 lines, no skipped files, no medium/high findings).
-Three Chromium journeys passed, including accepted offer → reviewed onboarding →
-hired application → approved first timesheet → payroll-preparation export.
-Recruitment hosted CI run `43017095832` passed.
-
-The workforce increment at private commit `4fc98cf` adds reviewed availability,
-qualification/expiry checks, optional shift engagement requirements, server-time
-mobile capture with replay-safe commands, preparation of dated timesheet drafts
-from reviewed clock/break events, immutable corrections and reviewed period
-closure. Closing rechecks source IDs/hours, pending events, overlapping periods
-and stale drafts, then blocks later time changes. Existing legacy shifts without
-configured eligibility requirements remain supported and do not establish full
-workforce eligibility. Legal paid-time rounding, leave balances, disputes and
-closed-period adjustments still require further work and acceptance.
-
-The local full run passed 155 PostgreSQL tests without skips, three standalone
-tests, migration drift/OpenAPI validation, runtime vulnerability and actual
-static-analysis scans, plus all three Chromium journeys and mobile clock in/out.
-Workforce hosted CI is pending.
-
-The baseline adds automatic migration/seed ordering in development Compose and a
-single verification command. CI is configured for PostgreSQL 17, browser checks,
-dependency scanning and static analysis; hosted CI status and a clean Docker
-build are still being checked. Local verification is developer evidence,
-not independent acceptance. No production, live payroll or live Xero claim is
-made.
-
-## Open release gates
-
-Client-specific applicability and access policy, independent calculation review,
-two reconciled parallel payroll periods, security/privacy/accessibility review,
-off-host recovery, named operational acceptance and written cutover authority
-remain open. Synthetic implementation work may proceed; dependent production
-capabilities remain disabled until their evidence and approvals are recorded.
+The full application plan remains in progress. Dedicated owner/finance/supervisor
+roles and approved field policy, supported MFA identity, delegated approvals,
+legally validated leave balances/rules, financial close and ledger-linked
+approvals, source completeness, live tenant/mapping evidence, two accepted
+parallel payroll periods, off-host recovery and independent reviews remain
+unfinished. Production requires named operational acceptance and written cutover
+authority. No live payroll, vendor-write activation or cutover is claimed.
