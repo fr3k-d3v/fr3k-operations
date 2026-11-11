@@ -74,7 +74,22 @@ tests, migration drift and OpenAPI checks, runtime dependency scanning and the
 corrected static scan (5,863 lines, no skipped files, no medium/high findings).
 Three Chromium journeys passed, including accepted offer → reviewed onboarding →
 hired application → approved first timesheet → payroll-preparation export.
-Recruitment hosted CI is pending.
+Recruitment hosted CI run `43017095832` passed.
+
+The workforce increment at private commit `4fc98cf` adds reviewed availability,
+qualification/expiry checks, optional shift engagement requirements, server-time
+mobile capture with replay-safe commands, preparation of dated timesheet drafts
+from reviewed clock/break events, immutable corrections and reviewed period
+closure. Closing rechecks source IDs/hours, pending events, overlapping periods
+and stale drafts, then blocks later time changes. Existing legacy shifts without
+configured eligibility requirements remain supported and do not establish full
+workforce eligibility. Legal paid-time rounding, leave balances, disputes and
+closed-period adjustments still require further work and acceptance.
+
+The local full run passed 155 PostgreSQL tests without skips, three standalone
+tests, migration drift/OpenAPI validation, runtime vulnerability and actual
+static-analysis scans, plus all three Chromium journeys and mobile clock in/out.
+Workforce hosted CI is pending.
 
 The baseline adds automatic migration/seed ordering in development Compose and a
 single verification command. CI is configured for PostgreSQL 17, browser checks,
