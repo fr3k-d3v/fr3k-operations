@@ -25,6 +25,7 @@ through migration 0021. Public documentation baseline:
 | `cdb5f6e` | Separate vacancy/application histories, interviews/evaluations/offers, replay-safe employment draft preparation, reviewed onboarding and separation records |
 | `4fc98cf` | Reviewed availability/qualifications, configured engagement/shift eligibility, server-time mobile capture, reviewed attendance preparation and immutable period close |
 | `cf6e2ca` | Encrypted controlled documents, independently approved internal publication, company/licence/insurance/obligation registers and accountable renewal queue |
+| `2043556` | Owner/finance/supervisor roles, access-review listing, modular workspace/search, assigned/delegated reviews and a complete application-table restore drill |
 
 Cost reports cover operational base hourly labour and expenses; payroll
 on-costs, tax and accounting reconciliation are excluded. Recruitment preparation
@@ -42,9 +43,9 @@ acceptance work.
 
 ## Current verification
 
-At private commit `cf6e2ca`, local PostgreSQL 18.6 verification passed:
+At private commit `2043556`, local PostgreSQL 18.6 verification passed:
 
-- 164 Django tests, no skips, plus three standalone export-inspector tests.
+- 175 Django tests, no skips, plus three standalone export-inspector tests.
 - Migration drift check and warning-free validated OpenAPI.
 - Four Chromium journeys with no page errors: leave/review and delivery recovery;
   roster → timesheet → split-job cost forecast; accepted offer → reviewed
@@ -52,7 +53,7 @@ At private commit `cf6e2ca`, local PostgreSQL 18.6 verification passed:
   encrypted document upload → independent publication → worker download.
 - Desktop/mobile checks, including mobile time capture and document library.
 - Runtime dependency scan: no known vulnerabilities.
-- Bandit: 6,679 lines scanned, no skipped files or medium/high findings; 38 low
+- Bandit: 7,165 lines scanned, no skipped files or medium/high findings; 38 low
   notices remain for review. The baseline CI scan initially scanned no files
   because of an incorrect path argument; it was corrected and is not relied on.
 
@@ -60,6 +61,14 @@ Private hosted CI includes both full application/browser/security checks and a
 fresh Docker Compose build/startup with migrations, idempotent seed and reachable
 login. Runs `43016402929` (projects) and `43017095832` (recruitment) passed.
 Later increments are being checked in their corresponding hosted runs.
+
+The isolated PostgreSQL restore drill now compares counts and complete serialized
+data digests for all 27 operations models, including encrypted evidence, approved
+cost inputs and outstanding assignments. All 46 triggers across 23 immutable
+tables restored, mutation was rejected and the document decrypted with its key
+kept outside the dump. A 154,861-byte synthetic dump took 0.035 seconds to dump
+and 0.054 seconds to restore. These tiny local timings are not production RTO/RPO
+or off-host/PITR evidence.
 
 These are developer-run synthetic checks, not independent acceptance, payroll
 certification, production deployment or live Xero evidence.
@@ -70,8 +79,7 @@ certification, production deployment or live Xero evidence.
 overlapping issues. Their unresolved acceptance criteria remain open; draft
 PR #7 remains research rather than implementation acceptance.
 
-The full application plan remains in progress. Dedicated owner/finance/supervisor
-roles and approved field policy, supported MFA identity, delegated approvals,
+The full application plan remains in progress. Actual approved field policy, supported MFA identity, verified external notification delivery,
 legally validated leave balances/rules, financial close and ledger-linked
 approvals, source completeness, live tenant/mapping evidence, two accepted
 parallel payroll periods, off-host recovery and independent reviews remain
