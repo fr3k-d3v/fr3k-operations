@@ -1,12 +1,12 @@
 # CREW CENTRAL capability and acceptance matrix
 
-Updated 2026-11-11. Source: private application commit `d48393a`. This public
+Updated 2026-11-11. Source: private application commit `ec94886`. This public
 page summarizes developer evidence; inspecting/reproducing the source requires
 private-repository access. Passing CI is not independent business acceptance.
 
 | Capability | Current implementation | Verification | Remaining acceptance |
 |---|---|---|---|
-| Reproducible application | Clean Docker initialization, synthetic seed, pinned runtime dependencies and one-command checks | PostgreSQL, OpenAPI, migration, browser/security and clean Compose CI | Independent operator install review |
+| Connected web workspace | Live overview, company/module navigation, record search/form actions, owner settings and access review | Dashboard role/isolation tests and full web browser journey | Independent accessibility and operator acceptance; production hosting remains gated |\n| Reproducible application | Clean Docker initialization, synthetic seed, pinned runtime dependencies and one-command checks | PostgreSQL, OpenAPI, migration, browser/security and clean Compose CI | Independent operator install review |
 | Identity and access | Owner/admin/finance/HR/supervisor/worker/auditor plus legacy manager; tenant isolation; access review; modular workspace | Role/action matrix and cross-entity tests | Approved provider/MFA, actual role/field policy and provisioning review |
 | Shared review | Independent decisions, assigned reviewers, delegation, deadlines and in-app queues | Assignment, replay, immutable history and authorization tests | Verified external notification delivery and escalation process |
 | Recruitment | Vacancies, applications, interviews/evaluations/offers, linked draft employment, onboarding and separation records | Recruitment-to-approved-work browser journey | Real HR acceptance, employment/classification applicability and broader contract variants |
@@ -20,8 +20,8 @@ private-repository access. Passing CI is not independent business acceptance.
 | Production | Explicit activation and independently approved evidence gates; HTTP/vendor writes blocked while unaccepted | Missing/expired/withdrawn/revision mismatch and production-blocking tests | All named release signoffs, monitored deployment, pilot and written cutover |
 | Optional AI/brand extensions | Deferred; permission-filtered ordinary search exists | No released AI generation or automated publishing claim | Separate optional implementation/acceptance |
 
-Current local checks passed **195 PostgreSQL tests without skips, four standalone
-tests and four Chromium journeys**, plus migration/OpenAPI, vulnerability and
+Current local checks passed **203 PostgreSQL tests without skips, four standalone
+tests and five Chromium journeys**, plus migration/OpenAPI, vulnerability and
 static checks. See the [progress page](CREW-CENTRAL-IMPLEMENTATION.md) for hosted
 CI state and source increments, and [delivery milestones](DELIVERY-MILESTONES.md)
 for issue ownership.
