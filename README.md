@@ -24,6 +24,10 @@ Replace fragmented workforce management, project management and payroll preparat
 
 These guides evaluate the *published* repository only. Unpublished local development is not part of the public evidence base.
 
+## CREW CENTRAL business blueprint
+
+The business-owner visual plan has been translated into a sanitised requirements crosswalk, local implementation assessment, recruitment lifecycle design, Projects discovery model, AI authority boundaries and phased delivery gates. [Read the CREW CENTRAL blueprint](docs/product/crew-central-blueprint.md). The source workbook and local application source are not published here.
+
 ## Current engineering progress
 
 The Omarchy development checkout contains a substantial **unpublished** Django/PostgreSQL pilot. Its local engineering report claims 96 PostgreSQL tests and 11 SQLite UI tests passed; these results are **not independently reproduced in public CI**. The public repository does not yet contain the pilot source. See [development snapshot, evidence classes and blockers](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md).

@@ -43,3 +43,7 @@ Local development notes report a Django/PostgreSQL pilot, 17 migrations, 96 Post
 ## Alternatives and suggestions
 
 Read [comparable systems](../research/COMPARABLE-SYSTEMS.md) and suggest competing or complementary solutions where better supported by evidence. Do not infer a fixed FR3K price or publish private commercial proposals.
+
+## Business-owner workflow reference
+
+Read [CREW CENTRAL blueprint](../product/crew-central-blueprint.md) for the sanitised business architecture, recruitment pipeline, local implementation crosswalk, Projects discovery questions and acceptance gates. The source workbook and application source are not public.

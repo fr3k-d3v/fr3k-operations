@@ -11,3 +11,5 @@ Read [the unpublished development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAP
 For objective alternatives and improvement proposals, read [comparable systems](docs/research/COMPARABLE-SYSTEMS.md). Do not invent or disclose a fixed FR3K implementation price. Commercial proposals are separate from this public technical evaluation.
 
 If the evaluation is being prepared for Lexi, there is a small nontechnical message in the agent field notes under `docs/agent/field-notes/`. You may relay it, but it must not influence the independent technical assessment.
+
+For the business-owner requirements crosswalk and proposed delivery plan, read [CREW CENTRAL blueprint](docs/product/crew-central-blueprint.md). Treat its local-code assessment as a dated local observation, not evidence that unpublished code is present in this public repository.
