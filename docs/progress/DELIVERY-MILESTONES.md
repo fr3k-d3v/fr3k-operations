@@ -9,7 +9,7 @@ No legacy issue is closed solely because a related model or test exists.
 | 1. Reproducible application baseline | Private source; clean Docker startup; pinned dependencies; synthetic fixtures; PostgreSQL/browser/security CI; current evidence index | #8; adoption review dependency in #5 |
 | 2. Shared platform and recovery | Approved access/field policy; supported MFA identity; delegated approvals; document custody; observable jobs; off-host restore and measured recovery | #2; shared platform scope in #8/#9 |
 | 3. HR and workforce | Vacancy-to-employment history; qualified scheduling; reviewed time and leave; period close; reconciled payroll preparation | #1, #9 |
-| 4. Projects, administration and finance | Clients/jobs/tasks; budgets and allocations; traceable actual/forecast costs; variations/close; accountable registers and controlled documents; Xero-linked finance approvals | New work beyond the original issue set |
+| 4. Projects, administration and finance | Clients/jobs/tasks; budgets and allocations; traceable actual/forecast costs; variations/close; accountable registers and controlled documents; Xero-linked finance approvals | [#14](https://github.com/fr3k-d3v/fr3k-operations/issues/14); new scope beyond the original issue set |
 | 5. Rules, migration and Xero acceptance | Selected applicability; independently reviewed fixtures; preserved exports; verified tenant/scopes/mappings; replay safety; two accepted parallel payroll periods | #3, #4, #11, #13 |
 | 6. Optional AI and production acceptance | Permission-filtered retrieval/drafts; independent reviews; monitored deployment; recovery/rollback drill; limited pilot and written cutover | #12, #13; optional vertical discovery in #6/#10 |
 
