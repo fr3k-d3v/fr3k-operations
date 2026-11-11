@@ -1,6 +1,6 @@
 # CREW CENTRAL capability and acceptance matrix
 
-Updated 2026-11-11. Source: private application commit `fc7876a`. This public
+Updated 2026-11-11. Source: private application commit `d48393a`. This public
 page summarizes developer evidence; inspecting/reproducing the source requires
 private-repository access. Passing CI is not independent business acceptance.
 
@@ -20,7 +20,7 @@ private-repository access. Passing CI is not independent business acceptance.
 | Production | Explicit activation and independently approved evidence gates; HTTP/vendor writes blocked while unaccepted | Missing/expired/withdrawn/revision mismatch and production-blocking tests | All named release signoffs, monitored deployment, pilot and written cutover |
 | Optional AI/brand extensions | Deferred; permission-filtered ordinary search exists | No released AI generation or automated publishing claim | Separate optional implementation/acceptance |
 
-Current local checks passed **194 PostgreSQL tests without skips, four standalone
+Current local checks passed **195 PostgreSQL tests without skips, four standalone
 tests and four Chromium journeys**, plus migration/OpenAPI, vulnerability and
 static checks. See the [progress page](CREW-CENTRAL-IMPLEMENTATION.md) for hosted
 CI state and source increments, and [delivery milestones](DELIVERY-MILESTONES.md)
