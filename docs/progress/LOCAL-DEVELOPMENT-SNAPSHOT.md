@@ -1,3 +1,5 @@
+> Historical snapshot: use the [current capability matrix](CAPABILITY-MATRIX.md) and [implementation progress](CREW-CENTRAL-IMPLEMENTATION.md) for later private-source delivery and verification. The original observations and test claims below are retained as dated history.
+
 # FR3K Operations — unpublished development progress
 
 **Snapshot date:** 2026-11-11 (AEST). **Evidence classification:** locally observed file inventory + developer-reported tests. **Publication scope:** this document only; application code and test artefacts remain on Omarchy and are not part of the public repository. **Release state:** development pilot, not production-ready or compliance-certified.
