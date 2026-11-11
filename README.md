@@ -30,7 +30,7 @@ The business-owner visual plan has been translated into a sanitised requirements
 
 ## Current engineering progress
 
-The Django/PostgreSQL application has been preserved and pushed to the new private `fr3k-d3v/fr3k-operations-app` repository. The baseline was rerun against PostgreSQL with browser checks; private CI is configured. See [current implementation progress, verification and release gates](docs/progress/CREW-CENTRAL-IMPLEMENTATION.md). The [older development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md) is retained as dated history; use the current progress page for updated counts and source references.
+The Django/PostgreSQL application has been preserved and pushed to the new private `fr3k-d3v/fr3k-operations-app` repository. The baseline was rerun against PostgreSQL with browser checks; private CI is configured. See the [current capability and acceptance matrix](docs/progress/CAPABILITY-MATRIX.md), [implementation progress](docs/progress/CREW-CENTRAL-IMPLEMENTATION.md), and [six delivery milestones](docs/progress/DELIVERY-MILESTONES.md). The [older development snapshot](docs/progress/LOCAL-DEVELOPMENT-SNAPSHOT.md) is retained as dated history; use the current progress page for updated counts and source references.
 
 ## Start here
 - [Architecture](docs/architecture/system.md)
