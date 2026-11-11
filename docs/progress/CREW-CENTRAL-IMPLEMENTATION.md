@@ -62,14 +62,16 @@ At private commit `d48393a`, local PostgreSQL 18.6 verification passed:
 Private hosted CI includes both full application/browser/security checks and a
 fresh Docker Compose build/startup with migrations, idempotent seed and reachable
 login. Runs `43016402929` (projects) and `43017095832` (recruitment) passed.
-Run `43025348286` passed application and clean Compose/recovery checks for `fc7876a`. The final capture-receipt increment is being checked in run `43026318548`.
+Run `43025348286` passed application and clean Compose/recovery checks for `fc7876a`. Run `43026318548` passed **both application and clean Compose/recovery jobs**
+for final private source `d48393a1302f1d48a220d2a184f835b8d6752bd8`.
+[View private CI evidence](https://github.com/fr3k-d3v/fr3k-operations-app/actions/runs/43026318548).
 
 The isolated PostgreSQL restore drill now compares counts and complete serialized
 data digests for all 27 operations models, including encrypted evidence, approved
 cost inputs and outstanding assignments. All 46 triggers across 23 immutable
 tables restored, mutation was rejected and the document decrypted with its key
-kept outside the dump. A 154,861-byte synthetic dump took 0.035 seconds to dump
-and 0.054 seconds to restore. These tiny local timings are not production RTO/RPO
+kept outside the dump. The final 155,301-byte synthetic dump took 0.037 seconds to dump
+and 0.053 seconds to restore. These tiny local timings are not production RTO/RPO
 or off-host/PITR evidence.
 
 These are developer-run synthetic checks, not independent acceptance, payroll
