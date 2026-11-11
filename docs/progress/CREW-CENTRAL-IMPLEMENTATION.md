@@ -26,6 +26,8 @@ through migration 0021. Public documentation baseline:
 | `4fc98cf` | Reviewed availability/qualifications, configured engagement/shift eligibility, server-time mobile capture, reviewed attendance preparation and immutable period close |
 | `cf6e2ca` | Encrypted controlled documents, independently approved internal publication, company/licence/insurance/obligation registers and accountable renewal queue |
 | `2043556` | Owner/finance/supervisor roles, access-review listing, modular workspace/search, assigned/delegated reviews and a complete application-table restore drill |
+| `fc7876a` | Reviewed manual leave balances, budget variations, invoice/close controls, time disputes, versioned event contract and enforced production acceptance gates |
+| `d48393a` | Reserved server-capture command references and authenticated immutable replay receipts |
 
 Cost reports cover operational base hourly labour and expenses; payroll
 on-costs, tax and accounting reconciliation are excluded. Recruitment preparation
@@ -43,9 +45,9 @@ acceptance work.
 
 ## Current verification
 
-At private commit `2043556`, local PostgreSQL 18.6 verification passed:
+At private commit `d48393a`, local PostgreSQL 18.6 verification passed:
 
-- 175 Django tests, no skips, plus three standalone export-inspector tests.
+- 195 Django tests, no skips, plus four standalone export-inspector tests.
 - Migration drift check and warning-free validated OpenAPI.
 - Four Chromium journeys with no page errors: leave/review and delivery recovery;
   roster → timesheet → split-job cost forecast; accepted offer → reviewed
@@ -53,14 +55,14 @@ At private commit `2043556`, local PostgreSQL 18.6 verification passed:
   encrypted document upload → independent publication → worker download.
 - Desktop/mobile checks, including mobile time capture and document library.
 - Runtime dependency scan: no known vulnerabilities.
-- Bandit: 7,165 lines scanned, no skipped files or medium/high findings; 38 low
+- Bandit: 7,802 lines scanned, no skipped files or medium/high findings; 46 low
   notices remain for review. The baseline CI scan initially scanned no files
   because of an incorrect path argument; it was corrected and is not relied on.
 
 Private hosted CI includes both full application/browser/security checks and a
 fresh Docker Compose build/startup with migrations, idempotent seed and reachable
 login. Runs `43016402929` (projects) and `43017095832` (recruitment) passed.
-Later increments are being checked in their corresponding hosted runs.
+Run `43025348286` passed application and clean Compose/recovery checks for `fc7876a`. The final capture-receipt increment is being checked in run `43026318548`.
 
 The isolated PostgreSQL restore drill now compares counts and complete serialized
 data digests for all 27 operations models, including encrypted evidence, approved
@@ -80,8 +82,11 @@ overlapping issues. Their unresolved acceptance criteria remain open; draft
 PR #7 remains research rather than implementation acceptance.
 
 The full application plan remains in progress. Actual approved field policy, supported MFA identity, verified external notification delivery,
-legally validated leave balances/rules, financial close and ledger-linked
-approvals, source completeness, live tenant/mapping evidence, two accepted
+independently accepted opening balances and legal accrual/rule packs, actual
+Xero/accounting read reconciliation, source completeness, live tenant/mapping evidence, two accepted
 parallel payroll periods, off-host recovery and independent reviews remain
-unfinished. Production requires named operational acceptance and written cutover
-authority. No live payroll, vendor-write activation or cutover is claimed.
+unfinished. The owner will advise the identity provider and approved recovery targets later.
+Production HTTP and production Xero staging are blocked in code by explicit
+activation and current-revision, independently approved evidence gates. No real
+acceptance record has been created. Production still requires named operational
+acceptance and written cutover authority. No live payroll, vendor-write activation or cutover is claimed.
