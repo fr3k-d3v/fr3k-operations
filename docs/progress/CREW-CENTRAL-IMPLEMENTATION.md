@@ -28,6 +28,7 @@ through migration 0021. Public documentation baseline:
 | `2043556` | Owner/finance/supervisor roles, access-review listing, modular workspace/search, assigned/delegated reviews and a complete application-table restore drill |
 | `fc7876a` | Reviewed manual leave balances, budget variations, invoice/close controls, time disputes, versioned event contract and enforced production acceptance gates |
 | `d48393a` | Reserved server-capture command references and authenticated immutable replay receipts |
+| `ec94886` | Connected CREW CENTRAL overview, responsive role navigation, module search/forms, web settings and access review |
 
 Cost reports cover operational base hourly labour and expenses; payroll
 on-costs, tax and accounting reconciliation are excluded. Recruitment preparation
@@ -45,17 +46,17 @@ acceptance work.
 
 ## Current verification
 
-At private commit `d48393a`, local PostgreSQL 18.6 verification passed:
+At private commit `ec94886`, local PostgreSQL 18.6 verification passed:
 
-- 195 Django tests, no skips, plus four standalone export-inspector tests.
+- 203 Django tests, no skips, plus four standalone export-inspector tests.
 - Migration drift check and warning-free validated OpenAPI.
-- Four Chromium journeys with no page errors: leave/review and delivery recovery;
+- Five Chromium journeys with no page errors: leave/review and delivery recovery;
   roster → timesheet → split-job cost forecast; accepted offer → reviewed
   onboarding → hired application → approved work → payroll-preparation export;
-  encrypted document upload → independent publication → worker download.
+  encrypted document upload → independent publication → worker download; connected overview → project search/form save → owner settings/access review → worker mobile/time navigation.
 - Desktop/mobile checks, including mobile time capture and document library.
 - Runtime dependency scan: no known vulnerabilities.
-- Bandit: 7,802 lines scanned, no skipped files or medium/high findings; 46 low
+- Bandit: application and operator source scanned with no skipped files or medium/high findings; 46 low
   notices remain for review. The baseline CI scan initially scanned no files
   because of an incorrect path argument; it was corrected and is not relied on.
 
@@ -76,6 +77,16 @@ or off-host/PITR evidence.
 
 These are developer-run synthetic checks, not independent acceptance, payroll
 certification, production deployment or live Xero evidence.
+
+## Connected web interface
+
+The application now opens on its connected operations overview. Read the
+[web interface summary](WEB-INTERFACE.md) for routes and verification.
+Latest private CI run [43030951743](https://github.com/fr3k-d3v/fr3k-operations-app/actions/runs/43030951743)
+passed both application and clean Compose/recovery jobs for
+`ec94886c87a426a9cd05167d0f1370fcca39ed37`.
+Application code and screenshots remain private; no public hosted deployment
+or production activation was performed.
 
 ## Milestones and remaining gates
 
