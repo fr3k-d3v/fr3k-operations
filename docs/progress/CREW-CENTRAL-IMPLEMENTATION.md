@@ -57,7 +57,24 @@ review. The earlier baseline CI scan invocation scanned no files; it has been
 corrected and is not relied on as static-analysis evidence.
 
 Private baseline hosted CI run `43015213006` passed application/browser checks.
-The expanded application and fresh Docker startup jobs are pending.
+Hosted CI run `43016402929` passed both the expanded application job and the
+clean Docker Compose startup job for private commit `32fddfc`.
+
+The recruitment increment at private commit `cdb5f6e` adds separate vacancy and
+application histories, interviews, evaluations, offers, onboarding and separation
+records. An approved accepted offer prepares linked employment drafts once;
+separate reviewers must approve the engagement, contract and rate and completed
+onboarding before a hired application can be approved. Candidate identity and
+earlier application versions are retained. Changed offers block silent rewrites.
+This does not automate employment decisions, account provisioning, final pay or
+notifications.
+
+Local verification passed 142 PostgreSQL tests (no skips), three standalone
+tests, migration drift and OpenAPI checks, runtime dependency scanning and the
+corrected static scan (5,863 lines, no skipped files, no medium/high findings).
+Three Chromium journeys passed, including accepted offer → reviewed onboarding →
+hired application → approved first timesheet → payroll-preparation export.
+Recruitment hosted CI is pending.
 
 The baseline adds automatic migration/seed ordering in development Compose and a
 single verification command. CI is configured for PostgreSQL 17, browser checks,
