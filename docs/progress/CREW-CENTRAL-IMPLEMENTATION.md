@@ -7,7 +7,8 @@ Updated: 2026-11-11.
 The owner has requested that this public repository carry documentation and
 verification summaries, with application code in a separate private repository.
 The private application repository is created and its visibility verified:
-`fr3k-d3v/fr3k-operations-app`. The first source commit is `2cd3052`.
+`fr3k-d3v/fr3k-operations-app`. The baseline source commit is `2cd3052`; the project-costing increment is
+`32fddfc`.
 Application source has not been published here. Earlier public snapshots remain dated developer observations.
 
 The local starting application is based on research commit
@@ -37,6 +38,26 @@ The private baseline at `2cd3052` was verified locally on 2026-11-11:
   and HR retry/replacement of approved synthetic export jobs passed with no page
   errors.
 - SQLite smoke: 118 tests passed with five PostgreSQL-specific tests skipped.
+
+At private commit `32fddfc`, project costing adds clients, milestones, reviewed
+project budgets, dated-rate work allocations across jobs, approved expenses and
+commitments, and immutable cost/forecast snapshots preserving all selected source
+versions. Allocations reconcile every date/rate to the approved timesheet.
+Duplicate approved allocations and stale corrected sources are blocked.
+The job-cost report remains operational base labour costing; payroll on-costs,
+tax, full source completeness and accounting reconciliation are not claimed.
+
+The expanded local verification passed 131 PostgreSQL tests (no skips), three
+standalone tests, migration drift and OpenAPI validation, and two Chromium
+journeys including roster → timesheet → split allocation → saved cost report.
+Desktop/mobile checks passed with no page errors. Runtime dependency scanning
+reported no known vulnerabilities. The corrected Bandit scan covered 5,607 lines
+with no skipped files and no medium/high findings; 38 low notices remain for
+review. The earlier baseline CI scan invocation scanned no files; it has been
+corrected and is not relied on as static-analysis evidence.
+
+Private baseline hosted CI run `43015213006` passed application/browser checks.
+The expanded application and fresh Docker startup jobs are pending.
 
 The baseline adds automatic migration/seed ordering in development Compose and a
 single verification command. CI is configured for PostgreSQL 17, browser checks,
