@@ -40,6 +40,7 @@ The Django/PostgreSQL application has been preserved and pushed to the new priva
 - [Xero integration](docs/integrations/xero.md)
 - [Open-source research](docs/research/repositories.md)
 - [Comparable systems and open suggestions](docs/research/COMPARABLE-SYSTEMS.md)
+- [FR3K BLACKSITE RESEARCH catalogue](research/catalogue/README.md)
 - [Delivery plan](docs/product/roadmap.md)
 - [Security and privacy](SECURITY.md)
 
@@ -57,3 +58,6 @@ Optional reference vertical: Australian labour hire, industrial construction and
 
 ## Industry-neutral core
 Core architecture is industry-agnostic; sector rules are optional, versioned packs. See [ADR-001](docs/product/industry-agnostic.md).
+
+## FR3K BLACKSITE RESEARCH catalogue
+Versioned frontier-technology discovery records live in the [BLACKSITE RESEARCH catalogue](research/catalogue/README.md). The catalogue starts as templates and an empty index; do not invent entries, citations or performance claims. This repository is public — do not record secrets, credentials, unreleased product details or other material that should remain private.
