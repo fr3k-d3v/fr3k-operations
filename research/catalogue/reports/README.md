@@ -1,13 +1,17 @@
 # Reports
-Dated reports for FR3K BLACKSITE RESEARCH. Copy a template. Do not invent findings or citations.
 
-This repository is public. Do not record secrets, credentials, tokens, private hostnames, unreleased product internals or other material that should remain private. See [Security and privacy](../../../SECURITY.md).
+Intelligence reports for FR3K BLACKSITE RESEARCH. Copy a template into this folder with a dated filename, for example `YYYY-MM-DD-daily-radar.md`. Do not invent findings, citations or performance claims.
 
-| Type | Template | File name |
-|---|---|---|
-| Daily radar | [daily-radar.md](../templates/daily-radar.md) | `YYYY-MM-DD-daily-radar.md` |
-| Weekly deep dive | [weekly-deep-dive.md](../templates/weekly-deep-dive.md) | `YYYY-MM-DD-weekly-deep-dive.md` |
-| Competitor watch | [competitor-watch.md](../templates/competitor-watch.md) | `YYYY-MM-DD-competitor-watch.md` |
-| FR3K advantage | [fr3k-advantage.md](../templates/fr3k-advantage.md) | `YYYY-MM-DD-fr3k-advantage.md` |
+Templates:
 
-`YYYY-MM-DD` is the report date. For a weekly deep dive it is the week starting date (`week_starting`). Label every statement using the [catalogue evidence labels](../README.md). The experiment queue is [QUEUE.md](../experiments/QUEUE.md), not a dated report.
+- [Daily radar](../templates/daily-radar.md) — highest-value fresh discoveries
+- [Weekly deep dive](../templates/weekly-deep-dive.md) — technically significant opportunities
+- [Competitor watch](../templates/competitor-watch.md) — genuine advancements and emerging products
+- [FR3K advantage](../templates/fr3k-advantage.md) — specific capabilities worth implementing
+
+Filed reports:
+
+- 2026-11-22: [AI-native Android deep dive](2026-11-22-ai-native-android-deep-dive.md) and [executive summary](2026-11-22-ai-native-android-exec-summary.md)
+- 2026-11-22: [Android base comparison (AOSP vs GrapheneOS vs JibarOS)](2026-11-22-android-base-comparison.md)
+- 2026-11-24: [Creative OS P1 licence and provenance](2026-11-24-creative-os-p1-licence-provenance.md)
+- Radar digests and watch logs are filed in [../radar/](../radar/README.md): [25 Nov](../radar/2026-11-25.md), [27 Nov](../radar/2026-11-27.md) and the [GrapheneOS 11S Pro watch log](../radar/grapheneos-11s-pro-watch-2026-11-22-to-28.md)

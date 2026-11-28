@@ -4,23 +4,39 @@ date: YYYY-MM-DD
 author: FR3K BLACKSITE RESEARCH
 ---
 
-# Daily radar
+# Daily radar — YYYY-MM-DD
 
-Record the day's finds that warrant a next action.
-
-Templates only; do not invent findings or citations.
-
-Label every statement using the [catalogue evidence labels](../README.md). Unreproduced performance numbers stay CLAIM.
-
-This repository is public. Do not record secrets, credentials, tokens, private hostnames, unreleased product internals or other material that should remain private. See [Security and privacy](../../../SECURITY.md).
+Highest-value fresh discoveries. Templates only; do not invent finds. For each item give sources, verification status, and one line on why it matters for FR3K. Flag unreproduced results. This repository is public — do not record secrets or unreleased private detail.
 
 ## Top finds
-Copy the block below once per find.
 
-### Find
-- **Summary:**
-- **Primary source:**
-- **Evidence label:**
-- **Reproduced:** yes / no / partial
-- **Why it matters for FR3K:**
-- **Next action:**
+### 1. Title
+
+- Sources:
+- Verification status: unreproduced / in progress / reproduced
+- Evidence labels:
+- Why it matters for FR3K:
+- Catalogue entry: none yet
+- Suggested routing: none | KINGPIN DEV | MONEY MACHINE | both
+
+### 2. Title
+
+- Sources:
+- Verification status:
+- Evidence labels:
+- Why it matters for FR3K:
+- Catalogue entry: none yet
+- Suggested routing:
+
+### 3. Title
+
+- Sources:
+- Verification status:
+- Evidence labels:
+- Why it matters for FR3K:
+- Catalogue entry: none yet
+- Suggested routing:
+
+## Watch list / negatives
+
+Nothing recorded in this blank template.
