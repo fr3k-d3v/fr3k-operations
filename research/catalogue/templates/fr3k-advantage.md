@@ -4,32 +4,24 @@ date: YYYY-MM-DD
 author: FR3K BLACKSITE RESEARCH
 ---
 
-# FR3K advantage
+# FR3K advantage — YYYY-MM-DD
 
-Record capabilities worth pursuing, and items deferred or rejected, each tied to evidence.
+Specific capabilities worth implementing. Templates only; do not invent capabilities, benchmarks or commercial claims. Each item must rest on a catalogue entry or a recorded experiment, and must include an engineering hypothesis or test plan.
 
-Templates only; do not invent findings or citations.
-
-Label every statement using the [catalogue evidence labels](../README.md). Unreproduced performance numbers stay CLAIM.
-
-This repository is public. Do not record secrets, credentials, tokens, private hostnames, unreleased product internals or other material that should remain private. See [Security and privacy](../../../SECURITY.md).
+This repository is public — do not record unreleased implementation detail that should remain private.
 
 ## Capabilities
-Copy the block below once per capability.
 
-- **Linked entry:**
-- **Linked experiment:**
-- **Evidence and confidence:**
-- **Reproduced:** yes / no / partial
-- **Practical advantage:**
-- **Implementation recommendation and cost:**
-- **Routing:** none / KINGPIN DEV / MONEY MACHINE / both
+### Capability
 
-Do not state a fixed FR3K implementation price. Cost means hardware, licence obligations and integration work.
+- Linked catalogue entry:
+- Linked experiment:
+- Evidence and confidence:
+- Reproduced: no
+- Practical advantage:
+- Implementation recommendation and estimated cost:
+- Suggested routing: KINGPIN DEV (implementation-ready) and/or MONEY MACHINE (revenue-relevant)
 
 ## Deferred or rejected
-Copy the block below once per item.
 
-- **Item:**
-- **Reason:**
-- **Evidence label:**
+Nothing recorded in this blank template.

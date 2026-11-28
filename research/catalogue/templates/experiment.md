@@ -1,46 +1,59 @@
 ---
-id: YYYY-MM-DD-short-slug
-title:
-linked_entry:
+id: EXP-YYYY-NNN
+title: ""
+related_entry: ""
 status: queued
-created: YYYY-MM-DD
-owner:
+priority: ""
+created_date: YYYY-MM-DD
+acceptance_criteria_defined: false
+run_started: ""
+run_completed: ""
+environment: isolated / non-production (required)
 ---
 
-# Experiment
+# Experiment: title
 
-Copy this file to `experiments/YYYY-MM-DD-short-slug.md`. Add a row to [QUEUE.md](../experiments/QUEUE.md) only after acceptance criteria are written. Templates only; do not invent findings or citations.
+Copy this template to `research/catalogue/experiments/EXP-YYYY-NNN-short-slug.md` and add a row to [QUEUE.md](../experiments/QUEUE.md).
 
-This repository is public. Do not record secrets, credentials, tokens, private hostnames, unreleased product internals or other material that should remain private. See [Security and privacy](../../../SECURITY.md).
+**Acceptance criteria must be defined before the experiment is run.** Do not start a test until `acceptance_criteria_defined` is `true` and the criteria below are complete.
 
-`status`: queued, running, complete, abandoned. `linked_entry` is the catalogue entry id. Owner is the person accountable for the run.
+Never execute untrusted source code on production infrastructure, data, credentials or networks. Use isolation and appropriate review.
 
 ## Hypothesis
 
+Label: HYPOTHESIS
+
+## Purpose and scope
+
+
+## Environment
+
+- Isolation method:
+- Hardware:
+- Software / dependencies (pinned, if known):
+- Dataset / workload (synthetic or public only unless authorised):
+
 ## Acceptance criteria
-Must be written and committed before the run. Do not start with this section empty.
 
-## Isolation and safety
-Do not run untrusted source code on production infrastructure. Use an isolated virtual machine or container, and review the code before running it.
+Write these first. The experiment passes only if all must-have criteria are met.
 
-## Hardware and environment
-Platform, accelerator, software versions and isolation boundary. No private hostnames.
-
-## Workload
+1. [ ] Criterion (measurable):
+2. [ ] Criterion (measurable):
+3. [ ] Safety / isolation criterion:
 
 ## Method
-Record the methodology so a later reader can repeat it.
 
-## Metrics to record
-Performance, thermal behaviour, memory use, cost, quality and failure rate. Record units.
+- Steps:
+- Metrics:
+- Comparison baseline:
+- What will be recorded (performance, thermal behaviour, memory use, cost, quality, failure rates, negative findings, reproducibility):
 
 ## Results
-Leave blank until the run. Label each result. Flag unreproduced results. Unreproduced performance numbers stay CLAIM.
 
-## Negative findings
-
-## Reproducibility details
-`reproduced`: yes, no or partial. State what was repeated, on what hardware, and what was not.
+Leave blank until the experiment has been run. Label results as OBSERVATION, EVIDENCE, VERIFIED FACT, SIMULATION or UNKNOWN. Flag anything not reproduced.
 
 ## Outcome
-Pass or fail against the acceptance criteria. Follow-up. Catalogue updates, including the linked entry's evidence label, confidence and reproduced flag.
+
+- Pass / fail against acceptance criteria:
+- Follow-up:
+- Catalogue entry updates required:

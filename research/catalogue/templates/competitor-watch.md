@@ -4,21 +4,22 @@ date: YYYY-MM-DD
 author: FR3K BLACKSITE RESEARCH
 ---
 
-# Competitor watch
+# Competitor watch — YYYY-MM-DD
 
-Record what changed for a competitor or product, and whether the change is a genuine advancement or marketing.
+Genuine advancements and emerging products. Templates only; do not invent competitors, products or citations. Discovery is not endorsement. Distinguish marketing CLAIMs from OBSERVATION, EVIDENCE and VERIFIED FACT. Flag unreproduced results.
 
-Templates only; do not invent findings or citations.
+## Items
 
-Label every statement using the [catalogue evidence labels](../README.md). Unreproduced performance numbers stay CLAIM.
+### Name or product
 
-This repository is public. Do not record secrets, credentials, tokens, private hostnames, unreleased product internals or other material that should remain private. See [Security and privacy](../../../SECURITY.md).
+- Source and date:
+- What is claimed:
+- What has been independently checked:
+- Verification status:
+- Why it may or may not matter for FR3K:
+- Catalogue entry: none yet
+- Suggested routing: none | KINGPIN DEV | MONEY MACHINE | both
 
-## Competitor or product
-Copy the block below once per competitor or product.
+## Summary
 
-- **What changed:**
-- **Source:**
-- **Evidence label:**
-- **Genuine advancement or marketing:**
-- **Implication for FR3K:**
+Nothing recorded in this blank template.
